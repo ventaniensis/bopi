@@ -1,0 +1,15 @@
+<?php 
+/*
+	<tns:Marcas>...</tns:Marcas>
+	<tns:NombresComerciales>...</tns:NombresComerciales>
+	<tns:RotulosEstablecimiento>...</tns:RotulosEstablecimiento>
+	<tns:MarcasInternacionales>...</tns:MarcasInternacionales>
+	<tns:CesionesLicenciasYCambiosNombreTitulares>...</tns:CesionesLicenciasYCambiosNombreTitulares>
+	<tns:RecursosAdministrativos>...</tns:RecursosAdministrativos>
+	<tns:Tribunales>...</tns:Tribunales>
+	<tns:CumplimientoDeSentencias>...</tns:CumplimientoDeSentencias>
+	<tns:RestablecimientoDeDerechos>...</tns:RestablecimientoDeDerechos>
+	<tns:Rectificaciones>...</tns:Rectificaciones>
+ * 
+ */
+?>
