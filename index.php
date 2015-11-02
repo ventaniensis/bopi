@@ -2,6 +2,8 @@
 
 require_once('bopi/bopi.downloader.inc');
 
+error_reporting(E_ERROR | E_PARSE);
+
 $year = $argv[1];
 $month = $argv[2];
 $day = $argv[3];
