@@ -19,7 +19,7 @@ class BopiDownloader
 			return 'ko';
 		}
 		$index = 0;
-		$yyyymmdd = $year.$month.$date;
+		$yyyymmdd = $year.$month.$day;
 		if (!file_exists($this->cache_folder))
 		{
 			mkdir($this->cache_folder);
