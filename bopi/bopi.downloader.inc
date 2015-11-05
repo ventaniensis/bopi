@@ -61,7 +61,7 @@ class BopiDownloader
 			}
 			try 
 			{
-				$texto = file_get_contents($url);
+				$texto = file_get_contents($url,false,$GLOBALS['ctx']);
 				file_put_contents($fname.'.tomo1.xml',$texto); // Save file with zero bytes to prevent more downloads
 				
 				if (trim($texto) !== '' && $texto !== null)
@@ -74,7 +74,7 @@ class BopiDownloader
 						print('	Downloading: '.$url."\n");
 					}
 				
-					$texto = file_get_contents($url);
+					$texto = file_get_contents($url,false,$GLOBALS['ctx']);
 					file_put_contents($fname.'.tomo2.xml',$texto);
 						
 					$url = 'https://sede.oepm.gob.es/bopidiario/TOMO3_'.$day.'-'.$month.'-'.$year.'.xml';
@@ -83,7 +83,7 @@ class BopiDownloader
 						print('	Downloading: '.$url."\n");
 					}
 				
-					$texto = file_get_contents($url);
+					$texto = file_get_contents($url,false,$GLOBALS['ctx']);
 					file_put_contents($fname.'.tomo3.xml',$texto);
 
 					$this->remove_images($fname.'.tomo1.xml','Marcas');
