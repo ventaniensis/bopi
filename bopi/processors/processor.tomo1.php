@@ -132,19 +132,23 @@ foreach ($entradas as $entrada) {
 					$left_part = explode('.',$parts[0]);
 					$namespace = $left_part[0];
 					$block = $left_part[1];
-					$namespace = $left_part[0];
-
-					if (!array_key_exists($namespace,$result))
+					if (trim($block) !== '')
 					{
-						$result[$namespace] = array();
-					}
-				
-					$fields = array();
-					for($i = 2; $i < count($parts[1]); $i++)
-					{
+						$namespace = $left_part[0];
+						
+						if (!array_key_exists($namespace,$result))
+						{
+							$result[$namespace] = array();
+						}
+						
+						$fields = array();
+						for($i = 2; $i < count($parts[1]); $i++)
+						{
 						array_push($fields,$parts[1][$i]);
+						}
+						$result[$namespace][$block] = $this->get_record($xmlDoc,$xpath,$parts[1][0],$parts[1][1],$fields);
+						
 					}
-					$result[$namespace][$block] = $this->get_record($xmlDoc,$xpath,$parts[1][0],$parts[1][1],$fields);
 				}
 			}
 		}
