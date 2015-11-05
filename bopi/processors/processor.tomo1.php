@@ -124,7 +124,7 @@ foreach ($entradas as $entrada) {
 				
 			foreach($rules as $rule)
 			{
-				if ($rule[0] !== '#')
+				if ($rule[0] !== '#' || trim($rule) === '')
 				{
 					$parts = explode('=',$rule);
 					$parts[1] = explode(',',$parts[1]);
