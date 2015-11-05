@@ -1,0 +1,18 @@
+# --------------------------------
+# 		Informaci—n de Marcas
+# --------------------------------
+marcas.solicitudes=SolicitudesMarcas,SolicitudMarca,PublicacionId,NombreTitular,ApellidosTitular,Modalidad,p21_NumSolicitud,TipoSigno,FechaDepositoRegular,Domicilio,CodigoPostal,PaisDeResidencia,Localidad,Provincia,ClasificacionesElementosFigurativos,$ProductosServiciosActividades
+marcas.suspensos_solicitud=SuspensosSolicitudMarca,SuspensoSolicitudMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.suspensos_fondo_ley17=SuspensosFondoLey17Marcas,SuspensoFondoLey17Marca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.suspensos_renovaciones=SuspensosRenovacionesMarcas,SuspensoRenovacionMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.suspensos_renuncias=SuspensosRenunciasMarcas,SuspensoRenunciaMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.concesiones_totales_parciales=ConcesionesTotalesParcialesMarcas,ConcesionTotalParcialMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionConcesion,FechaPublicSolicitud,$ClasesDenegadas,$ClasesConLimitacion,$ClasesConcedidas
+marcas.denegaciones_totales=DenegacionesTotalesMarcas,DenegacionTotalMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionConcesion,FechaPublicSolicitud,$ClasesDenegadas
+marcas.cancelaciones_caducidad=CancelacionesCaducidadMarcas,CancelacionCaducidadMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionCaducidad,$Clases,$Motivos
+marcas.renovaciones_concedidas=RenovacionesConcedidasMarcas,RenovacionConcedidaMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionConcesion,$Clases
+marcas.renovacion_parcial_concedidas=RenovacionesParcialesConcedidasMarcas,RenovacionParcialConcedidaMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaConcesion,$ClasesConcedidas,$ClasesDesistidas
+marcas.renovacion_denegada_marca=RenovacionesDenegadasMarcas,RenovacionDenegadaMarca,array(PublicacionId,Modalidad,p21_NumSolicitud,FechaSolicitudRenovacion,FechaResolucion
+
+# --------------------------------
+# 		Informaci—n de Nombres Comerciales
+# --------------------------------

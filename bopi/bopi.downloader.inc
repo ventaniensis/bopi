@@ -11,6 +11,26 @@ class BopiDownloader
 		$this->cache_folder = $v_cache_folder;
 	}
 	
+	// Remove images
+	function remove_images($filename,$tag_base)
+	{
+		if (filesize($filename) > 0)
+		{
+			$xmlDoc = new DOMDocument();
+			$xmlDoc->load($filename);
+			$tbody = $xmlDoc->getElementsByTagName($tag_base)->item(0);
+			$xpath = new DOMXPath($xmlDoc);
+			$consulta = '//tns:imagen';
+			$entradas = $xpath->query($consulta, $tbody);
+			foreach ($entradas as $entrada)
+			{
+				$entrada->parentNode->removeChild($entrada);
+			}
+			$xmlDoc->save($filename);
+			exit;
+		}
+	}
+	
 	// http://www.oepm.es/robots.txt
 	function bopi_daily_downloader($year,$month,$day)
 	{
@@ -43,6 +63,7 @@ class BopiDownloader
 			{
 				$texto = file_get_contents($url);
 				file_put_contents($fname.'.tomo1.xml',$texto); // Save file with zero bytes to prevent more downloads
+				
 				if (trim($texto) !== '' && $texto !== null)
 				{
 					// Contains text
@@ -64,6 +85,11 @@ class BopiDownloader
 				
 					$texto = file_get_contents($url);
 					file_put_contents($fname.'.tomo3.xml',$texto);
+
+					$this->remove_images($fname.'.tomo1.xml','Marcas');
+//					$this->remove_images($fname.'.tomo2.xml');
+//					$this->remove_images($fname.'.tomo3.xml');
+//						
 						
 					$code = 'ok';
 				}

@@ -43,6 +43,39 @@ class BopiProcessorTomo1
 		$this->cache_folder = $v_cache_folder;
 	}
 	
+	function get_record($xmlDoc,$xpath,$clase_suspenso,$tag_suspenso,$field_list)
+	{
+		$tbody = $xmlDoc->getElementsByTagName($clase_suspenso)->item(0);
+		$consulta = '//tns:'.$tag_suspenso;
+		$entradas = $xpath->query($consulta, $tbody);
+	
+		$result = array();
+		foreach ($entradas as $entrada)
+		{
+			$record = array();
+			foreach($field_list as $field)
+			{
+				if ($field[0] === '$')
+				{
+					// Multivalue
+					$field_name = substr($field, 1);
+					$record[$field_name] = array();
+					foreach ($entrada->getElementsByTagName($field_name) as $item)
+					{
+						array_push($record[$field_name],$item->nodeValue);
+					
+					}
+				}
+				else
+				{
+					$record[$field] = $entrada->getElementsByTagName($field)->item(0)->nodeValue;
+				}
+			}
+			array_push($result,$record);
+		}
+		return $result;
+	}
+	
 	// http://www.oepm.es/robots.txt
 	function process($year,$month,$day)
 	{
@@ -68,6 +101,7 @@ class BopiProcessorTomo1
 		{
 			$xmlDoc = new DOMDocument();
 			$xmlDoc->load($fname.'.tomo1.xml');
+			// Remove image
 			/*
 			$consulta = '//tns:Tomo1/tns:Marcas';
 			$xpath = new DOMXPath($xmlDoc);
@@ -78,39 +112,41 @@ foreach ($entradas as $entrada) {
          " por {$entrada->previousSibling->nodeValue}\n";
 }
 */
+			// Remove images
 			$tbody = $xmlDoc->getElementsByTagName('Marcas')->item(0);
 			$xpath = new DOMXPath($xmlDoc);
-			$consulta = '/tns:Marcas/tns:SolicitudesMarcas';
-			$consulta = '//tns:SolicitudMarca';
-			$entradas = $xpath->query($consulta, $tbody);
 
-			$result['payload'] = array();
-			$result['payload']['marcas'] = array();
+			/**
+				Load all data from data dictionary
+			 */
+			$dictionary = file_get_contents('data.dictionary.txt');
+			$rules = explode("\n",$dictionary);
 				
-			foreach ($entradas as $entrada) 
+			foreach($rules as $rule)
 			{
-				// Marcas
-				$record = array();
-				$record['PublicacionId'] = $entrada->getElementsByTagName('PublicacionId')->item(0)->nodeValue;
-				$record['NombreTitular'] = $entrada->getElementsByTagName('NombreTitular')->item(0)->nodeValue;
-				$record['ApellidosTitular'] = $entrada->getElementsByTagName('ApellidosTitular')->item(0)->nodeValue;
-				$record['Modalidad'] = $entrada->getElementsByTagName('Modalidad')->item(0)->nodeValue;
-				$record['p21_NumSolicitud'] = $entrada->getElementsByTagName('p21_NumSolicitud')->item(0)->nodeValue;
-				$record['TipoSigno'] = $entrada->getElementsByTagName('TipoSigno')->item(0)->nodeValue;
-				$record['FechaDepositoRegular'] = $entrada->getElementsByTagName('FechaDepositoRegular')->item(0)->nodeValue;
-				$record['Domicilio'] = $entrada->getElementsByTagName('Domicilio')->item(0)->nodeValue;
-				$record['CodigoPostal'] = $entrada->getElementsByTagName('CodigoPostal')->item(0)->nodeValue;
-				$record['PaisDeResidencia'] = $entrada->getElementsByTagName('PaisDeResidencia')->item(0)->nodeValue;
-				$record['Localidad'] = $entrada->getElementsByTagName('Localidad')->item(0)->nodeValue;
-				$record['Provincia'] = $entrada->getElementsByTagName('Provincia')->item(0)->nodeValue;
-				$record['ClasificacionesElementosFigurativos'] = $entrada->getElementsByTagName('ClasificacionesElementosFigurativos')->item(0)->nodeValue;
-				$record['ProductosServiciosActividades'] = $entrada->getElementsByTagName('ProductosServiciosActividades')->item(0)->nodeValue;
-				$record['IndicacionColores'] = $entrada->getElementsByTagName('IndicacionColores')->item(0)->nodeValue;
+				if ($rule[0] !== '#')
+				{
+					$parts = explode('=',$rule);
+					$parts[1] = explode(',',$parts[1]);
+						
+					$left_part = explode('.',$parts[0]);
+					$namespace = $left_part[0];
+					$block = $left_part[1];
+					$namespace = $left_part[0];
+
+					if (!array_key_exists($namespace,$result))
+					{
+						$result[$namespace] = array();
+					}
 				
-				
-				array_push($result['payload']['marcas'],$record);
+					$fields = array();
+					for($i = 2; $i < count($parts[1]); $i++)
+					{
+						array_push($fields,$parts[1][$i]);
+					}
+					$result[$namespace][$block] = $this->get_record($xmlDoc,$xpath,$parts[1][0],$parts[1][1],$fields);
+				}
 			}
-				
 		}
 		else
 		{
