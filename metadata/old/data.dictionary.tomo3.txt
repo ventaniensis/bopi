@@ -1,0 +1,7 @@
+# --------------------------------
+# 		Informaci—n de Dise–os Industriales
+# --------------------------------
+
+disenyo_industrial.concesiones=Concesiones,Pub_Concesion,PublicacionId,Modalidad,p21_NumSolicitud,NombreTitular,ApellidosTitular,Disenyo,FechaConcesion,FechaPublicacion,Domicilio,Localidad,CodProvincia,Provincia,CodPais,Pais,NombreRepresentante,ApellidosRepresentante,DomicilioRepresentante,LocalidadRepresentante,CodProvinciaRepresentante,ProvinciaRepresentante,CodPaisRepresentante,PaisRepresentante,$Productos
+
+disenyo_industrial.mencion_aplazamiento=MencionDeAplazamiento,Pub_MencionAplazamiento,PublicacionId,Modalidad,p21_NumSolicitud,NombreTitular,ApellidosTitular,Disenyo,FechaConcesion,FechaPresentacion

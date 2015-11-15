@@ -1,0 +1,83 @@
+----------------------------------------
+--	DATA DICTIONARY MACHINE GENERATED
+--	Generation date: 2015-11-12
+----------------------------------------
+
+----------------------------------------
+--		marcas
+----------------------------------------
+marcas.solicitudesmarcas=SolicitudesMarcas,SolicitudMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaDepositoRegular,TipoSigno,Domicilio,CodigoPostal,PaisDeResidencia,Localidad,Provincia,Denominacion,ClasificacionesElementosFigurativos,$ProductosServiciosActividades,IndicacionColores,NombreTitular,DescripcionSigno,ApellidosRepresentante,NombreRepresentante,DomicilioRepresentante,CPRepresentante,PaisRepresentante,LocalidadRepresentante,ProvinciaRepresentante,Otros,ElementosSigno
+marcas.suspensossolicitudmarcas=SuspensosSolicitudMarcas,SuspensoSolicitudMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucion,$Irregularidades,p74_NombreAgente,NombreTitular,Otros
+marcas.suspensosfondoley17marcas=SuspensosFondoLey17Marcas,SuspensoFondoLey17Marca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,NombreTitular,FechaResolucion,Clases,$Motivos,p74_NombreAgente,Otros
+marcas.suspensosrenovacionesmarcas=SuspensosRenovacionesMarcas,SuspensoRenovacionMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,Otros,FechaResolucion,Motivos,ApellidosRepresentante,NombreRepresentante,p74_NombreAgente,NombreTitular
+
+----------------------------------------
+--		resolucionesmarcas
+----------------------------------------
+resolucionesmarcas.desistimientosadmitidosmarcas=DesistimientosAdmitidosMarcas,DesistimientoAdmitidoMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaAdmisionRetirada,p74_NombreAgente,NombreTitular,Otros
+resolucionesmarcas.concesionestotalesparcialesmarcas=ConcesionesTotalesParcialesMarcas,ConcesionTotalParcialMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucionConcesion,FechaPublicSolicitud,ClasesConcedidas,p74_NombreAgente,ClasesDenegadas,Otros,$ClasesConLimitacion,NombreTitular,ModifDisenyo
+resolucionesmarcas.denegacionestotalesmarcas=DenegacionesTotalesMarcas,DenegacionTotalMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,NombreTitular,FechaResolucion,ClasesDenegadas,FechaPublicSolicitud,p74_NombreAgente,Otros
+resolucionesmarcas.cancelacionescaducidadmarcas=CancelacionesCaducidadMarcas,CancelacionCaducidadMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucionCaducidad,Clases,Motivos,p74_NombreAgente,NombreTitular,Otros
+resolucionesmarcas.renovacionesconcedidasmarcas=RenovacionesConcedidasMarcas,RenovacionConcedidaMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucionConcesion,Clases,LosSolicitadosEnLaRenovacion,ApellidosRepresentante,NombreRepresentante,p74_NombreAgente,NombreTitular,Otros
+resolucionesmarcas.renovacionesparcialesconcedidasmarcas=RenovacionesParcialesConcedidasMarcas,RenovacionParcialConcedidaMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaConcesion,ClasesConcedidas,ClasesDesistidas,p74_NombreAgente
+resolucionesmarcas.solicitudestenidasdesistidasmarcas=SolicitudesTenidasDesistidasMarcas,SolicitudTenidaDesistidaMarca,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,NombreTitular,FechaAcuerdo,p74_NombreAgente
+
+----------------------------------------
+--		nombrescomerciales
+----------------------------------------
+nombrescomerciales.ncsolicitudes=NCSolicitudes,SolicitudNC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaDepositoRegular,TipoSigno,Domicilio,CodigoPostal,PaisDeResidencia,Localidad,Provincia,Denominacion,ClasificacionesElementosFigurativos,$ProductosServiciosActividades,IndicacionColores,NombreTitular,DescripcionSigno,Otros,ApellidosRepresentante,NombreRepresentante,DomicilioRepresentante,CPRepresentante,PaisRepresentante,LocalidadRepresentante,ProvinciaRepresentante,ElementosSigno
+nombrescomerciales.ncsuspensosdesolicitud=NCSuspensosDeSolicitud,SuspensoSolicitudNC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,NombreTitular,FechaResolucion,$Irregularidades,p74_NombreAgente
+nombrescomerciales.ncsuspensosdefondoley17_2001=NCSuspensosDeFondoLey17.2001,SuspensoDeFondoLey17.2001NC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,NombreTitular,FechaResolucion,Clases,$Motivos
+nombrescomerciales.ncsuspensosrenovaciones=NCSuspensosRenovaciones,SuspensoRenovacionNC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucion,Motivos,p74_NombreAgente,NombreTitular
+
+----------------------------------------
+--		ncresoluciones
+----------------------------------------
+ncresoluciones.ncconcesionestotalesyparciales=NCConcesionesTotalesYParciales,ConcesionTotalYParcialNC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,NombreTitular,FechaResolucionConcesion,FechaPublicSolicitud,ModifDisenyo,ClasesConcedidas,Otros,ClasesConLimitacion,p74_NombreAgente
+ncresoluciones.ncdenegacionestotales=NCDenegacionesTotales,DenegacionTotalNC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,NombreTitular,FechaResolucion,ClasesDenegadas,FechaPublicSolicitud,p74_NombreAgente
+ncresoluciones.ncrenovacionesconcedidas=NCRenovacionesConcedidas,RenovacionConcedidaNC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucionConcesion,Clases,LosSolicitadosEnLaRenovacion,p74_NombreAgente,ApellidosRepresentante,NombreRepresentante,NombreTitular
+
+----------------------------------------
+--		resolucionesmarcasinternacionales
+----------------------------------------
+resolucionesmarcasinternacionales.miresoluciones=MIResoluciones,ResolucionMI,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,FechaResolucion,Texto
+resolucionesmarcasinternacionales.miextensionesterritoriales=MIExtensionesTerritoriales,ExtensionTerritorialMI,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,FechaResolucion,Texto,p74_NombreAgente
+
+----------------------------------------
+--		clccesiones
+----------------------------------------
+clccesiones.clcsuspensosdecesiones=CLCSuspensosDeCesiones,SuspensoCesionCLC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Motivo,p74_NombreAgente
+clccesiones.clcresolucionesdecesiones=CLCResolucionesDeCesiones,ResolucionCesionCLC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,$NuevoTitular,FechaResolucion,p74_NombreAgente,ExpedientesConcedidos
+
+----------------------------------------
+--		clclicenciascontractuales
+----------------------------------------
+clclicenciascontractuales.clcresolucionesdelicencias=CLCResolucionesDeLicencias,LCResolucionLicencia,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Cesionario,SenyalValores,FechaResolucion,TextoExplicativoActo,ExpedientesConcedidos
+
+----------------------------------------
+--		clccambionombretitulares
+----------------------------------------
+clccambionombretitulares.clcresolucionescambionombretitular=CLCResolucionesCambioNombreTitular,CNTInscripcion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,NuevoTitular,FechaInscripcion,p74_NombreAgente,TextoAcuerdoInscripcion,ExpedientesInscritos
+
+----------------------------------------
+--		ramarcas
+----------------------------------------
+ramarcas.raminterpuestos=RAMInterpuestos,RecursosAlzada_Interposicion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosRecurrente,NombreRecurrente,FechaInterposicion,LiteralActoRecurrido,FechaResolucion,$ClasesRecurridas,AgenteRepresentante_Apellidos,AgenteRepresentante_Nombre,NombreAgente_TitularExpediente,ApellidosAgente_TitularExpediente
+ramarcas.ramestimados=RAMEstimados,RecursoAlzada_Estimados,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosRecurrente,NombreRecurrente,FechaEstimacion,SenyalModificacion,TextoResolucion,AgenteRepresentante_Apellidos,AgenteRepresentante_Nombre,$ProductoClaseLimitacion,NombreAgente_TitularExpediente,ApellidosAgente_TitularExpediente,$ClasesProductoLimitacion,$ClasesConcedidas
+ramarcas.ramdesestimados=RAMDesestimados,RecursosAlzada_Desestimados,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosRecurrente,FechaDesestimacion,TextoResolucion,AgenteRepresentante_Apellidos,AgenteRepresentante_Nombre,NombreAgente_TitularExpediente,ApellidosAgente_TitularExpediente,NombreRecurrente
+
+----------------------------------------
+--		anotacionesdiversas
+----------------------------------------
+anotacionesdiversas.adembargos=ADEmbargos,Pub_AnotacionesDiversasEmbargo,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,NumeroAutos,NumReferencia,FechaPresentacion,FechaResolucion,Tribunal,Fallo,Observaciones,Clases
+
+----------------------------------------
+--		cancelacionanotacionesoficio
+----------------------------------------
+cancelacionanotacionesoficio.caoembargos=CAOEmbargos,Pub_CancelacionAnotacionesOficio_Embargo,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,NumeroAutos,NumReferencia,FechaPresentacion,FechaResolucion,Tribunal,Fallo,Observaciones,Clases
+
+----------------------------------------
+--		rectificaciones
+----------------------------------------
+rectificaciones.rmarcas=RMarcas,RectificacionConSinModificacion_Nacional,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,TextoPublicacionAnterior,TextoPublicacionErronea,TextoPublicacionCorrecta,p74_NombreAgente
+

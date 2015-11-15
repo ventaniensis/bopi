@@ -1,5 +1,7 @@
 <?php 
 
+require_once('bopi/processors/util/ImageRemover.inc');
+
 class BopiDownloader
 {
 	var $verbose = false;
@@ -27,7 +29,6 @@ class BopiDownloader
 				$entrada->parentNode->removeChild($entrada);
 			}
 			$xmlDoc->save($filename);
-			exit;
 		}
 	}
 	
@@ -86,7 +87,10 @@ class BopiDownloader
 					$texto = file_get_contents($url,false,$GLOBALS['ctx']);
 					file_put_contents($fname.'.tomo3.xml',$texto);
 
-					$this->remove_images($fname.'.tomo1.xml','Marcas');
+					ImageRemover::remove_images($fname.'.tomo1.xml','Marcas');
+					ImageRemover::remove_images($fname.'.tomo2.xml','PatenteNacional');
+					ImageRemover::remove_images($fname.'.tomo3.xml','DisenyoIndustrial');
+
 //					$this->remove_images($fname.'.tomo2.xml');
 //					$this->remove_images($fname.'.tomo3.xml');
 //						

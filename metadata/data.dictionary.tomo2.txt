@@ -1,0 +1,121 @@
+----------------------------------------
+--	DATA DICTIONARY MACHINE GENERATED
+--	Generation date: 2015-11-12
+----------------------------------------
+
+----------------------------------------
+--		hastapublicacioniet_art34_5lp
+----------------------------------------
+hastapublicacioniet_art34_5lp.continuacionprocedimiento_art31_5lp=ContinuacionProcedimiento_Art31.5LP,_PublicacionContinuacionProcedimientoInicioIET,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p74_NombreAgente
+hastapublicacioniet_art34_5lp.defectosexamenformalytecnico_art18_1rp=DefectosExamenFormalYTecnico_art18.1RP,_PublicacionSuspensoExamenFormalTecnico,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p74_NombreAgente
+hastapublicacioniet_art34_5lp.publicacionsolicitud_art32_1lp=PublicacionSolicitud_art32.1LP,Pub_SolicitudMencionIBI_PS,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p22_FechaSolicitud,$p51_ClasificacionInternacionalPatentes,p54_TituloInvencion,p71_NombreSolicitante,p57_ResumenOReivindicacion,p74_NombreAgente,MencionIBI,ClasificacionInternacionalPatentesAdicional
+hastapublicacioniet_art34_5lp.publicacioninformesobreestadotecnica=PublicacionInformeSobreEstadoTecnica,Pub_IET,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p71_NombreSolicitante,p43_FechaPublicacionSolicitud,p74_NombreAgente
+hastapublicacioniet_art34_5lp.publicacionmencioninformebusquedainternacional_art34_5lp=PublicacionMencionInformeBusquedaInternacional_Art34.5LP,Pub_MencionIBI_PMI,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p71_NombreSolicitante,MencionIBI,p74_NombreAgente
+
+----------------------------------------
+--		procedimientogeneralconcesion
+----------------------------------------
+procedimientogeneralconcesion.reanudacionprocedimientogeneralconcesion_art36_3lp=ReanudacionProcedimientoGeneralConcesion_Art36.3LP,_PublicacionReanudacionProcedimientoGeneralConcesion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p71_NombreSolicitante,p74_NombreAgente
+procedimientogeneralconcesion.trasladoobservacionesinformeestadotecnica=TrasladoObservacionesInformeEstadoTecnica,_PublicacionTrasladoObservacionesIET,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p71_NombreSolicitante,p74_NombreAgente
+
+----------------------------------------
+--		procedimientoconexamenprevio
+----------------------------------------
+procedimientoconexamenprevio.objeciones_oposicionesexamenprevio=Objeciones_OposicionesExamenPrevio,_PublicacionResultadoExamenPrevioOposiciones,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p71_NombreSolicitante,p74_NombreAgente
+procedimientoconexamenprevio.reanudacionprocemientoexamprevio=ReanudacionProcemientoexamPrevio,_PublicacionReanudacionProcedimientoExamenPrevio,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p71_NombreSolicitante,p74_NombreAgente
+
+----------------------------------------
+--		concesion
+----------------------------------------
+concesion.concesionconexamenprevio_art40_1lp=ConcesionConExamenPrevio_Art40.1LP,_PublicacionConcesionConExamPrevio,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p22_FechaSolicitud,p73_NombreTitular,Nacionalidad,Domicilio,Pais,Localidad,p43_FechaPublicacionSolicitud,p74_NombreAgente,p51_ClasificacionInternacionalPatentes,p54_TituloInvencion,FechaConcesion,ModificacionYReivindicacion,p57_ResumenOReivindicacion
+
+----------------------------------------
+--		retirada
+----------------------------------------
+retirada.inscripcionretiradavoluntaria=InscripcionRetiradaVoluntaria,_PublicacionConcesionRetiradaVoluntaria,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud
+retirada.retiradasolicitud_art33_3lp=RetiradaSolicitud_Art33.3LP,_PublicacionRetiradaSolicitudNoPeticionPagoIET,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p74_NombreAgente
+
+----------------------------------------
+--		hastapublicacionsolicitud_art148_4lp
+----------------------------------------
+hastapublicacionsolicitud_art148_4lp.defectosexamenformaltecnicoymodalidad_art42_1rp=DefectosExamenFormalTecnicoYModalidad_Art42.1RP,_PublicacionSuspensoExamenTecnicoFormalModalidad,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p74_NombreAgente
+
+----------------------------------------
+--		desdepublicacionsolicitud
+----------------------------------------
+desdepublicacionsolicitud.resolucionmotivadanegativa_art46_3rp=ResolucionMotivadaNegativa_Art46.3RP,_PublicacionExamenOposiciones,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p71_NombreSolicitante,NombreOponente,p74_NombreAgente
+
+----------------------------------------
+--		retiradamu
+----------------------------------------
+retiradamu.retirada_art31_2=Retirada_Art31.2,_PublicacionRetiradaImpagoDerechosConcesion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p74_NombreAgente
+
+----------------------------------------
+--		denegacionmu
+----------------------------------------
+denegacionmu.denegacion_art31_4lp=Denegacion_Art31.4LP,PubDenegacionModeloUtilidad_Art31.4,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud
+
+----------------------------------------
+--		concesionmu
+----------------------------------------
+concesionmu.concesion_art47_3rp=Concesion_Art47.3RP,Publicacion_Concesion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p11_NumPatenteCCP,p22_FechaSolicitud,p73_NombreTitular,Nacionalidad,Domicilio,Pais,Localidad,Provincia,p43_FechaPublicacionSolicitud,$p51_ClasificacionInternacionalPatentes,p54_TituloInvencion,FechaConcesion,p74_NombreAgente
+
+----------------------------------------
+--		tramitacion
+----------------------------------------
+tramitacion.defectosexamenformalprorrogaccp_art10r_ce468_2009=DefectosExamenFormalProrrogaCCP_Art10R_CE468_2009,PubSuspensoExamenFormalProrroga,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p71_NombreSolicitante,p74_NombreAgente
+tramitacion.solicitudesprorroga=SolicitudesProrroga,_PublicacionSolicitudesProrroga,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p68_NumPublicacionSolicitudCCP,p54_TituloInvencion,p93_AutorizacionCEE_NumeroFecha,p95_DenomProducto,p71_NombreSolicitante,NacionalidadSolicitante,DomicilioSolicitante,PaisSolicitante,LocalidadSolicitante,p92_AutorizacionEsp,p74_NombreAgente
+
+----------------------------------------
+--		terminacion
+----------------------------------------
+terminacion.concesiones=Concesiones,_PublicacionConcesion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p94_FechaLimiteValidezCCP,p68_NumPublicacionSolicitudCCP,p54_TituloInvencion,p93_AutorizacionCEE_NumeroFecha,p95_DenomProducto,p73_NombreTitular,Nacionalidad,Domicilio,Pais,Localidad,p92_AutorizacionEsp,FechaConcesion,p74_NombreAgente
+
+----------------------------------------
+--		otros
+----------------------------------------
+otros.caducidad_e=Caducidad_E,_PublicacionDeclaracionCaducidadE,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p11_NumPatenteCCP,p54_TituloInvencion,p73_NombreTitular,p74_NombreAgente,FechaIncorporacionDominioPublico,Motivo
+
+----------------------------------------
+--		protecciondefinitiva
+----------------------------------------
+protecciondefinitiva.defectossolicitudprotecciondefinitiva_capvrd2424_1986=DefectosSolicitudProteccionDefinitiva_CapVRD2424_1986,_PublicacionDefectosProteccionDefinitiva,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p96_DatosPresentacionSolictudEuropea,p97_DatosPublicacionSolicitudEuropea,p74_NombreAgente
+protecciondefinitiva.protecciondefinitivacapitulovrd_2424_1986=ProteccionDefinitivaCapituloVRD_2424_1986,_PublicacionMencionTraduccionProteccionDefinitiva,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p96_DatosPresentacionSolictudEuropea,p97_DatosPublicacionSolicitudEuropea,p11_NumPatenteCCP,p73_NombreTitular,$p51_ClasificacionInternacionalPatentes,$ClasificacionInternacionalPatentesAdicional,p74_NombreAgente,p54_TituloInvencion,p86_FechaNumSolInternacionalSolicitudRegionalPCT,p87_DatosCorrespondientesPublicacionSolicitudPCT,p31_NumSolicitudPrioritaria,p32_FechaSolicitudPrioritaria,p33_CodigoST
+
+----------------------------------------
+--		cesiones
+----------------------------------------
+cesiones.defectossolicitudinscripcioncesion=DefectosSolicitudInscripcionCesion,_PublicacionExamenFormalCesion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,p74_NombreAgente
+cesiones.resolucionsobresolicitudinscripcioncesion=ResolucionSobreSolicitudInscripcionCesion,_PublicacionResolucionCesion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,p74_NombreAgente,$Cesionario,$Cedente,$Concedidos_Numeros_Solicitud
+
+----------------------------------------
+--		licenciasplenoderecho
+----------------------------------------
+licenciasplenoderecho.inscripcionofrecimiento=InscripcionOfrecimiento,_PublicacionInscripcionOfrecimientoLicenciaPlenoDerecho,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,p11_NumPatenteCCP,p73_NombreTitular,Nacionalidad,Domicilio,Pais,Localidad,Provincia
+
+----------------------------------------
+--		copiasautorizadas
+----------------------------------------
+copiasautorizadas.defectossolicitudcopiaautorizada=DefectosSolicitudCopiaAutorizada,_PublicacionDefectosSolicitudCopia,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p74_NombreAgente
+
+----------------------------------------
+--		prorrogas
+----------------------------------------
+prorrogas.concesionprorroga=ConcesionProrroga,_PublicacionConcesionProrroga,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud,p74_NombreAgente
+prorrogas.denegacionprorroga=DenegacionProrroga,_PublicacionDenegacionProrroga,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p22_FechaSolicitud
+
+----------------------------------------
+--		rpatentes
+----------------------------------------
+rpatentes.rprectificaciones=RPRectificaciones,RPRRectificacionSinAnulacionPublicacion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p74_NombreAgente,p11_NumPatenteCCP,FolletoCorregido,p72_NombreInventor,BopiConError,ActoAnulado,ActoErroneo,ConErrorEn,LoCorrectoEs
+
+----------------------------------------
+--		rectificae
+----------------------------------------
+rectificae.rerectificaciones=RERectificaciones,RERSolicitudPatenteEuropeaCorregida,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,DigitoControl,p74_NombreAgente,p11_NumPatenteCCP,FolletoCorregido,Reivindicaciones,p73_NombreTitular,Domicilio,Pais,Localidad
+
+----------------------------------------
+--		rautilidad
+----------------------------------------
+rautilidad.rauinterpuestos=RAUInterpuestos,Interposicion.RecursosReposicion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,FechaInterposicion,LiteralActo,FechaResolucionRecurrida,ApellidosRecurrente,NombreRecurrente
+

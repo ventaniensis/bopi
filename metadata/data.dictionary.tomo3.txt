@@ -1,0 +1,47 @@
+----------------------------------------
+--	DATA DICTIONARY MACHINE GENERATED
+--	Generation date: 2015-11-12
+----------------------------------------
+
+----------------------------------------
+--		procedimientoderegistro
+----------------------------------------
+procedimientoderegistro.suspensodeforma_oficio=SuspensoDeForma_Oficio,Pub_SuspensoDeForma_OficioNL,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Disenyo,Solicitante,LiteralFechaSuspenso,FechaResolucionSuspenso,Motivos
+
+----------------------------------------
+--		resolucionespr
+----------------------------------------
+resolucionespr.concesiones=Concesiones,Pub_Concesion,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Disenyo,ApellidosTitular,NombreTitular,LiteralFechaAcuerdoConcesion,FechaConcesion,FechaPresentacion,$Autor_EquipoAutores,Domicilio,Localidad,CodProvincia,Provincia,CodPais,Pais,ClasificacionLocamo,Productos,$GrupoImagen,ApellidosRepresentante,NombreRepresentante,CodAgente,DomicilioRepresentante,LocalidadRepresentante,CodProvinciaRepresentante,ProvinciaRepresentante,CodPaisRepresentante,PaisRepresentante,NuevoTitularApellido,NuevoTitularNombre
+resolucionespr.concesionesconaplazamiento=ConcesionesConAplazamiento,Pub_ConcesionConAplazamiento_NL,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Disenyo,LiteralFechaAcuerdoConcesion,FechaConcesion,LiteralConAplazamiento
+
+----------------------------------------
+--		resolucionespo
+----------------------------------------
+resolucionespo.estimacionesoposiciones=EstimacionesOposiciones,Pub_EstimacionesDeOposiciones,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Disenyo,ApellidosTitular,NombreTitular,LiteralFechaEstimacion,FechaResolucion
+
+----------------------------------------
+--		aplazamientospublicacion
+----------------------------------------
+aplazamientospublicacion.menciondeaplazamiento=MencionDeAplazamiento,Pub_MencionAplazamiento,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Disenyo,ApellidosTitular,LiteralFechaAcuerdoConcesion,FechaConcesion,FechaPresentacion
+aplazamientospublicacion.publicaciondisenyosaplazados=PublicacionDisenyosAplazados,Pub_DisenyosAplazados,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,Disenyo,ApellidosTitular,NombreTitular,Domicilio,Localidad,CodProvincia,Provincia,CodPais,Pais,LiteralFechaAcuerdoConcesion,FechaConcesion,FechaPresentacion,FechaRecepcionArt13Reglamento,FechaBopiPublicacionMencion,Autor_EquipoAutores,ClasificacionLocamo,Productos,$GrupoImagen
+
+----------------------------------------
+--		clccesiones
+----------------------------------------
+clccesiones.clcresolucionesdecesiones=CLCResolucionesDeCesiones,ResolucionCesionCLC,PublicacionId,Modalidad,p21_NumSolicitud,Bis,Literal,LiteralFechaAcuerdoResolucion,FechaResolucion,p74_NombreAgente,CodAgente,PrimerCesionario,RegistrosConcedidos
+
+----------------------------------------
+--		clccambionombretitulares
+----------------------------------------
+clccambionombretitulares.clcresolucionescambionombretitular=CLCResolucionesCambioNombreTitular,Pub_ResolucionesCambioNombre,PublicacionId,Modalidad,p21_NumSolicitud,Bis,LiteralFechaAcuerdoResolucion,FechaResolucion,PrimerCesionario,RegistrosConcedidos,p74_NombreAgente,CodAgente
+
+----------------------------------------
+--		resolucionesmi
+----------------------------------------
+resolucionesmi.caducidadesmi=CaducidadesMI,Pub_Caducidad,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucion,Motivos,Otros
+
+----------------------------------------
+--		resolucionesdi
+----------------------------------------
+resolucionesdi.caducidadesdi=CaducidadesDI,Pub_Caducidad,PublicacionId,Modalidad,p21_NumSolicitud,Bis,DigitoControl,ApellidosTitular,FechaResolucion,Motivos,Otros
+

@@ -1,0 +1,24 @@
+# --------------------------------
+# 		Informaci—n de Marcas
+# --------------------------------
+marcas.solicitudes=SolicitudesMarcas,SolicitudMarca,PublicacionId,NombreTitular,ApellidosTitular,Modalidad,p21_NumSolicitud,TipoSigno,FechaDepositoRegular,Domicilio,CodigoPostal,PaisDeResidencia,Localidad,Provincia,ClasificacionesElementosFigurativos,$ProductosServiciosActividades
+marcas.suspensos_solicitud=SuspensosSolicitudMarca,SuspensoSolicitudMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.suspensos_fondo_ley17=SuspensosFondoLey17Marcas,SuspensoFondoLey17Marca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.suspensos_renovaciones=SuspensosRenovacionesMarcas,SuspensoRenovacionMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.suspensos_renuncias=SuspensosRenunciasMarcas,SuspensoRenunciaMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucion
+marcas.concesiones_totales_parciales=ConcesionesTotalesParcialesMarcas,ConcesionTotalParcialMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionConcesion,FechaPublicSolicitud,$ClasesDenegadas,$ClasesConLimitacion,$ClasesConcedidas
+marcas.denegaciones_totales=DenegacionesTotalesMarcas,DenegacionTotalMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionConcesion,FechaPublicSolicitud,$ClasesDenegadas
+marcas.cancelaciones_caducidad=CancelacionesCaducidadMarcas,CancelacionCaducidadMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionCaducidad,$Clases,$Motivos
+marcas.renovaciones_concedidas=RenovacionesConcedidasMarcas,RenovacionConcedidaMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaResolucionConcesion,$Clases
+marcas.renovacion_parcial_concedidas=RenovacionesParcialesConcedidasMarcas,RenovacionParcialConcedidaMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaConcesion,$ClasesConcedidas,$ClasesDesistidas
+marcas.renovacion_denegada_marca=RenovacionesDenegadasMarcas,RenovacionDenegadaMarca,PublicacionId,Modalidad,p21_NumSolicitud,FechaSolicitudRenovacion,FechaResolucion
+
+# --------------------------------
+# 		Informaci—n de Nombres Comerciales
+# --------------------------------
+
+nombres_comerciales.solicitudes=NCSolicitudes,SolicitudNC,PublicacionId,Modalidad,p21_NumSolicitud,TipoSigno,ApellidosTitular,NombreTitular,FechaDepositoRegular,Domicilio,CodigoPostal,PaisDeResidencia,Localidad,Provincia,Denominacion,ClasificacionesElementosFigurativos,$ProductosServiciosActividades,IndicacionColores
+nombres_comerciales.suspensos=NCSuspensosDeSolicitud,SuspensoSolicitudNC,PublicacionId,Modalidad,p21_NumSolicitud,ApellidosTitular,NombreTitular,FechaResolucion
+nombres_comerciales.suspensos_fondo_ley17=NCSuspensosDeFondoLey17.2001,SuspensoDeFondoLey17.2001NC,PublicacionId,Modalidad,p21_NumSolicitud,ApellidosTitular,NombreTitular,FechaResolucion,$Clases,$Motivos
+nombres_comerciales.resoluciones=NCDenegacionesTotales,DenegacionTotalNC,PublicacionId,Modalidad,p21_NumSolicitud,ApellidosTitular,NombreTitular,FechaResolucion,FechaPublicSolicitud,$ClasesDenegadas
+
