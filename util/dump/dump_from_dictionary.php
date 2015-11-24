@@ -106,6 +106,7 @@ function dump_data_iteration($folder,$file)
 					// Print line
 				}
 			}
+			//exit;
 		}//if	
 	}//if
 }

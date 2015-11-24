@@ -22,6 +22,7 @@ class CSVDumper
 	
 	function escape_characters($value)
 	{
+		$value = str_replace("\n", " ", $value);
 		$value = str_replace($this->separator, L1_ESCAPED, $value);	
 		$value = str_replace($this->separator_2, L2_ESCAPED, $value);
 		return $value;
